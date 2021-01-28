@@ -15,7 +15,7 @@
 //if (person != null) {
   //alert("you are welcome "+ person);
 //}
-var userorder = prompt("what would you like to order pants or t-shirt","please enter here");
+var userorder = prompt("what would you like to order pants or t-shirt","please enter order");
 while(userorder !=="pants" && userorder!=="t-shirt"){
   userorder = prompt("please enter Pants or t-shirt");
 }
