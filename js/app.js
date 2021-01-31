@@ -16,13 +16,17 @@
   //alert("you are welcome "+ person);
 //}
 var userorder = prompt("what would you like to order pants or t-shirt","please enter order");
+function checkEnters(userorder){
 while(userorder !=="pants" && userorder!=="t-shirt"){
   userorder = prompt("please enter Pants or t-shirt");
-}
-var userInput = prompt("how many Pants or t-shirt do you wont?");
-var image ="";
+}}  
 
-for(var i= 1 ;i <= userInput ;i++){
+checkEnters(userorder);
+
+var userInput = prompt("how many Pants or t-shirt do you wont?");
+function nc(userorder,userInput){
+ for(var i= 1 ;i <= userInput ;i++){
+  var image ="";
   if(userorder == "pants"){
     image = '<img src ="https://tierra.com/wp-content/uploads/2018/02/T1079210-dark-grey-1-800x973.jpg">';
     document.write(image);
@@ -33,4 +37,6 @@ for(var i= 1 ;i <= userInput ;i++){
     document.write(image);
     document.write(i);
   }
-}
+}}
+
+nc(userorder,userInput);
