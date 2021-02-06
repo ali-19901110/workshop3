@@ -39,3 +39,7 @@ footer{
     width:100%;
     display:block;
 }
+
+div {
+    background: grey;
+  }
